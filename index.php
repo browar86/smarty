@@ -1,2 +1,3 @@
-include ("libs/Smarty.class.php");
+<?php include ("libs/Smarty.class.php");
 $smarty = new Smarty();
+?>
