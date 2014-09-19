@@ -6,5 +6,12 @@
 				<td>{$nazwisko}</td>
 			</tr>
 		</table>
+		<table borfer="1">
+			<tr>
+				{section name=pracownicy loop=$pracownicy}
+					<td>{$pracownicy[pracownicy]}</td>
+				{/section}
+			</tr>
+		</table>
 	</body>
 </html>
