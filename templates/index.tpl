@@ -6,7 +6,7 @@
 				<td>{$nazwisko}</td>
 			</tr>
 		</table>
-		<table borfer="1">
+		<table border="1">
 			<tr>
 				{section name=pracownicy loop=$pracownicy}
 					<td>{$pracownicy[pracownicy]}</td>

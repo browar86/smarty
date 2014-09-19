@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-09-19 10:52:00
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-19 10:55:36
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:8571541c09156e4527-81796719%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9517ba21275b5cc9c47ea59da531628b05fa41ef' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1411123917,
+      1 => 1411124135,
       2 => 'file',
     ),
   ),
@@ -35,7 +35,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </td>
 			</tr>
 		</table>
-		<table borfer="1">
+		<table border="1">
 			<tr>
 				<?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['pracownicy'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['pracownicy']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['pracownicy']['name'] = 'pracownicy';
