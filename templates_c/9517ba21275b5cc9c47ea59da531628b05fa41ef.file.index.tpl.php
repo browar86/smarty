@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-09-19 10:55:36
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-22 10:55:05
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:8571541c09156e4527-81796719%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9517ba21275b5cc9c47ea59da531628b05fa41ef' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1411124135,
+      1 => 1411383304,
       2 => 'file',
     ),
   ),
@@ -22,10 +22,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'imie' => 0,
     'nazwisko' => 0,
     'pracownicy' => 0,
+    'pracownicy2' => 0,
+    'pracownik' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_541c091571d682_82153415')) {function content_541c091571d682_82153415($_smarty_tpl) {?><html>
+	<head>
+		<meta charset="utf-8"/>	
+	</head>
 	<body>
 		<table>
 			<tr>
@@ -35,7 +40,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </td>
 			</tr>
 		</table>
-		<table border="1">
+		<table border="1"> 
 			<tr>
 				<?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['pracownicy'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['pracownicy']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['pracownicy']['name'] = 'pracownicy';
@@ -65,6 +70,24 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['pracownicy']['last']       =
 </td>
 				<?php endfor; endif; ?>
 			</tr>
+		</table>
+		<table border="1">
+			<tr>
+				<td>Imię</td>
+				<td>Stanowisko</td>
+			</tr>
+			<?php  $_smarty_tpl->tpl_vars['pracownik'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['pracownik']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['pracownicy2']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['pracownik']->key => $_smarty_tpl->tpl_vars['pracownik']->value) {
+$_smarty_tpl->tpl_vars['pracownik']->_loop = true;
+?>	
+				<tr>
+					<td><?php echo $_smarty_tpl->tpl_vars['pracownik']->value['imie'];?>
+</td>
+					<td><?php echo $_smarty_tpl->tpl_vars['pracownik']->value['stanowisko'];?>
+</td>
+				</tr>
+			<?php } ?>
 		</table>
 	</body>
 </html><?php }} ?>
