@@ -15,7 +15,7 @@
 					<td>{$pracownicy[pracownicy]}</td>
 				{/section}
 			</tr>
-		</table>
+		</table><br/>
 		<table border="1">
 			<tr>
 				<td>Imię</td>
@@ -28,5 +28,13 @@
 				</tr>
 			{/foreach}
 		</table>
+		{if $pokaz == "tak"}
+			{section name=pracownicy loop=$pracownicy}
+				{$pracownicy[pracownicy]}
+				{if $smarty.section.pracownicy.index is div by 2}
+					<br/>
+				{/if}
+			{/section}
+		{/if}
 	</body>
 </html>
