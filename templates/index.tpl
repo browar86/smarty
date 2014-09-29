@@ -1,8 +1,10 @@
+{config_load file='konfiguracja.conf'}
 <html>
 	<head>
 		<meta charset="utf-8"/>	
+		<link href="styles/style.css" rel="stylesheet"/>
 	</head>
-	<body>
+	<body style="background-color: {#tlo#}; color: {#tekst#}">
 		<table>
 			<tr>
 				<td>{$imie}</td>
