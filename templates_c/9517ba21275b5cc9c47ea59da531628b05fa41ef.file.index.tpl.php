@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2014-09-29 13:10:17
+<?php /* Smarty version Smarty-3.1.19, created on 2014-09-29 14:45:13
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:8571541c09156e4527-81796719%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9517ba21275b5cc9c47ea59da531628b05fa41ef' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1411996216,
+      1 => 1412001912,
       2 => 'file',
     ),
   ),
@@ -25,17 +25,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'pracownicy2' => 0,
     'pracownik' => 0,
     'pokaz' => 0,
+    'owoce_id' => 0,
+    'owoce' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_541c091571d682_82153415')) {function content_541c091571d682_82153415($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config('konfiguracja.conf', $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars(null, 'local'); ?>
+<?php if ($_valid && !is_callable('content_541c091571d682_82153415')) {function content_541c091571d682_82153415($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_options')) include 'D:\\strony\\www\\smarty\\libs\\plugins\\function.html_options.php';
+?><?php  $_config = new Smarty_Internal_Config('konfiguracja.conf', $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars(null, 'local'); ?>
 <html>
 	<head>
 		<meta charset="utf-8"/>	
-		<link href="styles/style.css" rel="stylesheet"/>
 	</head>
 	<body style="background-color: <?php echo $_smarty_tpl->getConfigVariable('tlo');?>
-; color: <?php echo $_smarty_tpl->getConfigVariable('tekst');?>
+ color: <?php echo $_smarty_tpl->getConfigVariable('tekst');?>
 ">
 		<table>
 			<tr>
@@ -126,5 +128,11 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['pracownicy']['last']       =
 				<?php }?>
 			<?php endfor; endif; ?>
 		<?php }?>
+		<form>
+			<select>
+			<?php echo smarty_function_html_options(array('values'=>$_smarty_tpl->tpl_vars['owoce_id']->value,'output'=>$_smarty_tpl->tpl_vars['owoce']->value,'selected'=>33),$_smarty_tpl);?>
+
+			</select>
+		</form>
 	</body>
 </html><?php }} ?>

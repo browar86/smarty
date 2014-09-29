@@ -2,9 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>	
-		<link href="styles/style.css" rel="stylesheet"/>
 	</head>
-	<body style="background-color: {#tlo#}; color: {#tekst#}">
+	<body style="background-color: {#tlo#} color: {#tekst#}">
 		<table>
 			<tr>
 				<td>{$imie}</td>
@@ -38,5 +37,10 @@
 				{/if}
 			{/section}
 		{/if}
+		<form>
+			<select>
+				{html_options values=$owoce_id output=$owoce selected=33}
+			</select>
+		</form>
 	</body>
 </html>
